@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="800dp">
+<TextView
+    android:layout_marginTop="3dp"
+    android:padding="5dp"
+    android:textStyle="bold"
+    android:id="@+id/app_name"
+    android:textColor="@color/colorPrimary"
+    android:layout_centerHorizontal="true"
+    android:text="mPlus"
+    android:textSize="26sp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"/>
+    <ImageView
+        android:layout_marginTop="15dp"
+        android:src="@drawable/evrything_on_go"
+        android:layout_below="@+id/app_name"
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"/>
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:text="Hassele Free Service"
+        android:layout_below="@+id/image"
+        android:id="@+id/title"
+        android:textSize="20sp"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/colorBlack"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_below="@+id/title"
+        android:layout_centerHorizontal="true"
+android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/message"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

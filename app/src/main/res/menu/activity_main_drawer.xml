@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/chat"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="@string/chat" />
+        <item
+            android:id="@+id/faqs"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/faqs" />
+        <item
+            android:id="@+id/contact_us"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/contact_us" />
+        <item
+            android:id="@+id/offers"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="@string/offers" />
+
+        <item
+            android:id="@+id/home_maintenance_packages"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/home_maintenance_packages" />
+        <item
+            android:id="@+id/one_off_serviceas"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="@string/one_off_serviceas" />
+        <item
+            android:id="@+id/about_us"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/about_us" />
+        <item
+            android:id="@+id/terms_conditions"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/terms_conditions" />
+        <item
+            android:id="@+id/membership"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/membership" />
+        <item
+            android:id="@+id/rating"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/rating" />
+        <item
+            android:id="@+id/share"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/share" />
+        <item
+            android:id="@+id/logout"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/logout" />
+
+    </group>
+</menu>

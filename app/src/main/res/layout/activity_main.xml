@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/r1"
+        android:layout_width="match_parent"
+        android:layout_height="600dp">
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="500dp" />
+
+        <me.relex.circleindicator.CircleIndicator
+            android:id="@+id/indicator"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/pager" />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:weightSum="2"
+        android:id="@+id/button_partition"
+        android:layout_below="@+id/r1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:padding="5dp"
+            android:text="Sign Up"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:id="@+id/signup"
+            android:textColor="@color/colorPrimary"
+            android:background="@drawable/edit_background"
+            android:layout_weight="1"
+            android:onClick="signUp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:textStyle="bold"
+            android:padding="5dp"
+            android:textColor="@color/colorWhite"
+            android:layout_marginRight="5dp"
+           android:text="Sign In"
+            android:onClick="signIn"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/loginUp"
+            android:background="@drawable/button_background"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+<TextView
+    android:onClick="skip"
+    android:padding="5dp"
+    android:textStyle="bold"
+    android:textColor="@color/colorPrimary"
+    android:layout_marginTop="15dp"
+    android:layout_centerHorizontal="true"
+    android:layout_below="@+id/button_partition"
+    android:text="Skip for now"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"/>
+</RelativeLayout>
+</androidx.core.widget.NestedScrollView>
